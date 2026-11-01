@@ -155,8 +155,27 @@
         <li><a href="mailto:hello@howshaw.com" class="btn btn-ghost">✉ Email</a></li>
         <li><a href="https://github.com/" class="btn btn-ghost" rel="me noopener">⌘ GitHub</a></li>
       </ul>
+
+      <div class="pilot-test">
+        <p>Think you can fly? Take the obstacle course:</p>
+        <button id="launch-ship" class="btn btn-saber launch-ship" aria-haspopup="dialog">
+          <svg viewBox="-36 -20 60 40" aria-hidden="true">
+            <path class="flame" d="M-14 -5 L-34 0 L-14 5 Z"/>
+            <path class="wing" d="M-6 -4 L-16 -18 L-8 -18 L6 -4 Z M-6 4 L-16 18 L-8 18 L6 4 Z"/>
+            <path class="hull" d="M22 0 L-14 -7 L-14 7 Z"/>
+            <ellipse class="cockpit" cx="2" cy="0" rx="5" ry="3"/>
+          </svg>
+          <span>Launch Ship</span>
+        </button>
+      </div>
     </section>
   </main>
+
+  <!-- Spaceship obstacle course (see assets/js/game.js) -->
+  <div id="game" class="game" hidden role="dialog" aria-modal="true" aria-label="Spaceship obstacle course">
+    <canvas tabindex="-1"></canvas>
+    <button class="game-close btn btn-ghost small" aria-label="Exit game">✕ Exit</button>
+  </div>
 
   <footer class="site-footer">
     <p>© <span id="year">2026</span> Toren H · May the Force be with you.</p>
@@ -165,5 +184,6 @@
   </footer>
 
   <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/game.js" defer></script>
 </body>
 </html>

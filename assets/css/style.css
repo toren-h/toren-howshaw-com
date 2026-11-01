@@ -267,6 +267,25 @@ main { max-width: 72rem; margin: 0 auto; padding: 0 1.5rem; }
 /* Contact */
 .comms { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 1rem; }
 
+/* Launch Ship button */
+.pilot-test { margin-top: 2.5rem; }
+.launch-ship { display: inline-flex; align-items: center; gap: .7rem; border: 2px solid var(--saber); }
+.launch-ship svg { width: 2.6rem; height: 1.6rem; transition: transform .3s; }
+.launch-ship .hull { fill: #2a2f3a; }
+.launch-ship .wing { fill: #6b7385; }
+.launch-ship .cockpit { fill: var(--saber); }
+.launch-ship .flame { fill: var(--saber); opacity: 0; transition: opacity .2s; }
+.launch-ship:hover svg, .launch-ship:focus-visible svg { transform: translateX(6px); }
+.launch-ship:hover .flame, .launch-ship:focus-visible .flame { opacity: 1; animation: flame .12s infinite alternate; }
+@keyframes flame { to { opacity: .5; } }
+
+/* Game overlay */
+body.game-active { overflow: hidden; }
+.game { position: fixed; inset: 0; z-index: 200; background: #000; }
+.game[hidden] { display: none; }
+.game canvas { display: block; width: 100%; height: 100%; touch-action: none; outline: none; }
+.game-close { position: absolute; top: 1rem; right: 1rem; }
+
 /* Footer */
 .site-footer {
   text-align: center; padding: 3rem 1.5rem;
