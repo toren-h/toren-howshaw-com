@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Toren H · A Long Time Ago, In a Galaxy Far, Far Away</title>
+  <meta name="description" content="The personal holonet station of Toren H — projects, missions, and transmissions from across the galaxy.">
+  <meta name="author" content="Toren H">
+  <meta name="theme-color" content="#000000">
+  <link rel="canonical" href="https://toren.howshaw.com/">
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Toren H">
+  <meta property="og:description" content="Projects, missions, and transmissions from across the galaxy.">
+  <meta property="og:url" content="https://toren.howshaw.com/">
+  <meta property="og:image" content="https://toren.howshaw.com/assets/img/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Toren H",
+    "url": "https://toren.howshaw.com/"
+  }
+  </script>
+</head>
+<body>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+
+  <!-- Opening crawl -->
+  <section id="intro" class="intro" aria-label="Opening crawl">
+    <p class="intro-preface">A long time ago in a galaxy far,<br>far away....</p>
+    <h1 class="intro-title"><span>TOREN</span><span>H</span></h1>
+    <div class="crawl-viewport">
+      <div class="crawl">
+        <p class="crawl-episode">Episode I</p>
+        <p class="crawl-subtitle">A NEW HOMEPAGE</p>
+        <p>It is a period of digital expansion. Rebel developers, striking from a hidden terminal, have won their first victory against the evil Empire of Unfinished Side Projects.</p>
+        <p>During the battle, a lone builder managed to deploy secret plans to the ultimate weapon: a PERSONAL WEBSITE, a static station with enough power to share an entire career.</p>
+        <p>Pursued by sinister agents of procrastination, Toren races home aboard a GitHub Page, custodian of the stolen plans that can save the galaxy and restore freedom to the internet....</p>
+      </div>
+    </div>
+    <button id="skip-intro" class="btn btn-ghost skip">Skip crawl ›</button>
+  </section>
+
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Main">
+      <a href="#top" class="brand">T<span>·</span>H</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">☰</button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#about">Profile</a></li>
+        <li><a href="#skills">Arsenal</a></li>
+        <li><a href="#missions">Missions</a></li>
+        <li><a href="#log">Ship's Log</a></li>
+        <li><a href="#contact">Comms</a></li>
+        <li><button id="side-toggle" class="side-toggle" title="Switch sides">◐ <span>Light Side</span></button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">// Incoming transmission</p>
+      <h2 class="hero-title">Toren H</h2>
+      <p class="hero-sub" id="typed" data-phrases='["Builder of things.","Pilot of terminals.","Tinkerer. Learner. Rebel."]'></p>
+      <div class="hero-actions">
+        <a href="#missions" class="btn btn-saber">View Missions</a>
+        <a href="#contact" class="btn btn-ghost">Open Comms</a>
+      </div>
+    </section>
+
+    <section id="about" class="panel">
+      <h2 class="section-title"><span>01</span> Pilot Profile</h2>
+      <div class="profile">
+        <div class="holo-card" aria-hidden="true">
+          <div class="holo-avatar">TH</div>
+          <dl class="holo-stats">
+            <dt>Callsign</dt><dd>Toren</dd>
+            <dt>Homeworld</dt><dd>Earth (Sol System)</dd>
+            <dt>Allegiance</dt><dd>Rebel Alliance</dd>
+            <dt>Rank</dt><dd>Commander</dd>
+            <dt>Status</dt><dd class="status-ok">● Active</dd>
+          </dl>
+        </div>
+        <div class="profile-text">
+          <!-- TODO: replace with your own bio -->
+          <p>Greetings, traveller. I'm <strong>Toren H</strong>. This station is where I log the things I build, the things I learn, and the occasional transmission from the outer rim.</p>
+          <p>I like solving problems, making tools that people enjoy using, and exploring new technology the way a Jedi apprentice explores the Force — curiously, patiently, and with the occasional crash landing.</p>
+          <p class="quote">“Do. Or do not. There is no try.”</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="panel">
+      <h2 class="section-title"><span>02</span> Arsenal</h2>
+      <!-- TODO: adjust skills and levels (0-100) -->
+      <ul class="skills">
+        <li data-level="90"><span>Problem Solving</span><div class="saber"><i></i></div></li>
+        <li data-level="85"><span>Web Development</span><div class="saber"><i></i></div></li>
+        <li data-level="75"><span>Systems &amp; DevOps</span><div class="saber"><i></i></div></li>
+        <li data-level="70"><span>Design</span><div class="saber"><i></i></div></li>
+        <li data-level="95"><span>Curiosity</span><div class="saber"><i></i></div></li>
+      </ul>
+    </section>
+
+    <section id="missions" class="panel">
+      <h2 class="section-title"><span>03</span> Missions</h2>
+      <!-- TODO: replace with real projects -->
+      <div class="cards">
+        <article class="card">
+          <p class="card-tag">Classified · 2026</p>
+          <h3>Operation Hyperdrive</h3>
+          <p>A flagship project. Describe what it does, who it's for, and what you're proud of.</p>
+          <a href="#" class="card-link">Access files ›</a>
+        </article>
+        <article class="card">
+          <p class="card-tag">Open Source</p>
+          <h3>Project Kyber</h3>
+          <p>A tool or library you've built or contributed to. Link to the repository.</p>
+          <a href="#" class="card-link">Access files ›</a>
+        </article>
+        <article class="card">
+          <p class="card-tag">Side Quest</p>
+          <h3>Holocron Archive</h3>
+          <p>A fun experiment, a hobby build, or something you made just because.</p>
+          <a href="#" class="card-link">Access files ›</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="log" class="panel">
+      <h2 class="section-title"><span>04</span> Ship's Log</h2>
+      <!-- TODO: replace with your timeline -->
+      <ol class="timeline">
+        <li><time>2026</time><h3>Launched this station</h3><p>Deployed toren.howshaw.com to the holonet via GitHub Pages.</p></li>
+        <li><time>20XX</time><h3>A great milestone</h3><p>A job, a degree, a launch — something worth logging.</p></li>
+        <li><time>20XX</time><h3>Where it all began</h3><p>The first line of code, the first project, the first spark.</p></li>
+      </ol>
+    </section>
+
+    <section id="contact" class="panel">
+      <h2 class="section-title"><span>05</span> Open Comms</h2>
+      <p class="contact-intro">Help me, visitor. You're my only hope. Send a transmission:</p>
+      <!-- TODO: fill in your real links -->
+      <ul class="comms">
+        <li><a href="mailto:hello@howshaw.com" class="btn btn-ghost">✉ Email</a></li>
+        <li><a href="https://github.com/" class="btn btn-ghost" rel="me noopener">⌘ GitHub</a></li>
+        <li><a href="https://www.linkedin.com/" class="btn btn-ghost" rel="me noopener">⌂ LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> Toren H · May the Force be with you.</p>
+    <p class="disclaimer">A fan-made theme. Not affiliated with Lucasfilm or Disney.</p>
+    <button id="replay" class="btn btn-ghost small">↻ Replay crawl</button>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
